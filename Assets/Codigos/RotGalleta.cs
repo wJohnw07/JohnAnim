@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Logica : MonoBehaviour
+public class RotGalleta : MonoBehaviour
 {
+    public float rot;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +14,6 @@ public class Logica : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        transform.Rotate(new Vector3(0f, rot, 0f) * Time.deltaTime);
     }
 }
